@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Manager</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .bg-img {
+            background-image: url("https://plus.unsplash.com/premium_vector-1682310692574-34442a44be23?bg=FFFFFF&q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center; /* Align background image at center */
+            width: 900px;
+            height: 700px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bg-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Add an overlay */
+        }
+
+        .container {
+            max-width: 800px;
+            padding:15px;
+            background-color: #ffdf;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .container,
+        .bg-img {
+            text-align: center; /* Center align content */
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-img">
+        <div class="bg-overlay"></div>
+        <h1>To-Do List Manager</h1>
+    </div>
+    <div class="container">
+        <div id="categories"></div>
+        <div id="add-category">
+            <input type="text" id="category-name" placeholder="Enter Category Name">
+            <button onclick="addCategory()">Add Category</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

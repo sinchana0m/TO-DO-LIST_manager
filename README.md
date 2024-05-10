@@ -1,5 +1,5 @@
 # TO-DO-LIST_manager
-#ABOUT
+ABOUT:
 Taskify is a To do list manager app/webpagr that allows user to manage their tasks with minimalist features yet in productive manner
 
 check out the live webpage at: https://takify.tiiny.site
